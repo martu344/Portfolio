@@ -44,8 +44,8 @@
     position: absolute;
     z-index: 0;
     padding-left:10vw ;
-    margin-left: 45vw;
-    margin-right: 45vw;
+    width: 0vw;
+    margin:0 45vw;
     opacity: 0.2;
     border-top: 4px solid #F9F9F9;
     animation-duration: 3s;
@@ -53,8 +53,7 @@
 }
  .linea2{
     /* position: absolute; */
-    margin-left: 45vw;
-    margin-right: 45vw;
+    margin:0 45vw;
     border-top: 4px solid #F9F9F9;
     animation-duration: 3s;
     animation-name:linea2;
