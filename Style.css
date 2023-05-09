@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+/* body{
+    background-color: #363636;
+} */
+.presentacion{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    animation-name: presentacion;
+    animation-delay: 8s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+
+.nombre{
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    color: #F9F9F9;
+    animation-duration: 3s;
+    text-align: center;
+    animation-name: nombre;
+    margin-top:42vh; 
+    margin-bottom: 3vh; 
+}
+.partearriba{
+    background-color: #393939;
+    width: 100vw;
+    height: 50vh;
+}
+.parteabajo{
+    background-color: #393939;
+    width: 100vw;
+    height: 50vh;
+}
+
+.linea1{
+    position: absolute;
+    z-index: 0;
+    padding-left:10vw ;
+    margin-left: 45vw;
+    margin-right: 45vw;
+    opacity: 0.2;
+    border-top: 4px solid #F9F9F9;
+    animation-duration: 3s;
+    animation-name:linea1;
+}
+ .linea2{
+    /* position: absolute; */
+    margin-left: 45vw;
+    margin-right: 45vw;
+    border-top: 4px solid #F9F9F9;
+    animation-duration: 3s;
+    animation-name:linea2;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    color: #393939;
+}
+.linea3{
+    position:absolute;
+   bottom: 10vh;
+    border-top: 4px solid #F9F9F9;
+    animation-duration: 3s;
+    animation-name:linea3;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+.linea4{
+    position:absolute;
+    bottom: 20vh;
+    border-top: 4px solid #F9F9F9;
+    animation-duration: 3s;
+    animation-name:linea4;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+    opacity:0;
+} 
+.linea5{
+    position:absolute;
+    top: 30vh;
+    border-top: 4px solid #F9F9F9;
+    animation-duration: 3s;
+    animation-name:linea5;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+    opacity:0;
+} 
+.linea6{
+    position:absolute;
+    top: 10vh;
+    border-top: 4px solid #F9F9F9;
+    animation-duration: 3s;
+    animation-name:linea6;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+    opacity:0;
+} 
+
+@keyframes presentacion {
+    0%{}
+    100%{
+        transform: scaleY(0);
+        /* background-color: white; */
+    }
+    } 
+ 
+    
+
+@keyframes linea1 {
+    0%{
+        margin-right: 100vw;
+    }   
+}
+@keyframes linea2 {
+    0%{
+        opacity: 0;
+        margin-right: 100%;
+    }  
+   
+    100%{
+        opacity: 1;
+    }
+  
+}
+@keyframes linea3 {
+    0%{
+        opacity: 0;
+        margin-left: 100%;
+    }  
+    100%{
+        opacity: 1;
+    }
+  
+}
+@keyframes linea4 {
+    0%{
+        opacity: 0;
+        
+    }  
+    100%{
+        margin-left: 99%;
+        opacity: 1;
+    }
+  
+}
+@keyframes linea5 {
+    0%{
+        opacity: 0;
+        margin-left: 100%;
+    }  
+    100%{
+        opacity: 1;
+    }
+  
+}
+@keyframes linea6{
+    0%{
+        opacity: 0;
+        
+    }  
+    100%{
+        margin-left: 99%;
+        opacity: 1;
+    }
+  
+}
+
+@keyframes nombre {
+    0%{
+        transform:scale(1.8);
+        opacity:0;
+    }
+
+}
