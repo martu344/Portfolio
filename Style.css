@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -8,14 +8,14 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .menupadre{
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    z-index: +20;
+    z-index: +20;  */
     width: 100vw;
     padding-top: 10vh;
-    /* animation-name: menufijo;
+    animation-name: menufijo;
     animation-fill-mode: forwards;
-    animation-delay: 8.5s; */
+    animation-delay: 12s;
 }
 
 .menu{
@@ -27,9 +27,10 @@ body{
     flex-direction: column;
     align-items: stretch;
     animation-name: presentacion;
-    animation-delay: 8s;
-    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-duration: 0.1s; 
     animation-fill-mode: forwards;
+    
     
 }
 nav a{
@@ -37,20 +38,47 @@ nav a{
     font-weight: bold;
     text-decoration: none;
     color: #393939;
+    font-size: small;
 
     /* align-items: end; */
 }
 .principal{
-    margin-top: 50vh;
-    
-
+    margin-top: 20vh;
+}
+.principal2{
+    display: flex;
+    margin-left: 20vw;
 }
 
+.mitrabajo{
+    display: block;
+    width: 9vw;
+    font-size: small;
+    font-weight: bold;
+    color: #393939;
+   text-decoration: none;
+   margin-top: 10vh;
+    margin-bottom: 8vh;
+    margin-left: 2vw;
 
+}
+.textoingreso p{
+    font-size: small;
+    line-height: 4vh;
+}
+
+.diseñador{
+    line-height: 8vh;
+    margin-top: 5vh;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 5vh;
+} 
 .nombre{
+    font-weight: 400;
     width: 100vw;
     color: #F9F9F9;
-    animation-duration: 3s;
+    animation-duration: 2s;
     text-align: center;
     animation-name: nombre;
     margin-top:42vh; 
@@ -60,11 +88,21 @@ nav a{
     background-color: #393939;
     width: 100vw;
     height: 50vh;
+    animation-name: partearriba;
+    animation-delay: 7.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  
 }
 .parteabajo{
     background-color: #393939;
     width: 100vw;
     height: 50vh;
+    animation-name: parteabajo;
+    animation-delay: 7.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
 }
 
 .linea1{
@@ -75,136 +113,86 @@ nav a{
     margin:0 45vw;
     opacity: 0.2;
     border-top: 4px solid #F9F9F9;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name:linea1;
+    animation-delay: 4.2s;
+    animation-fill-mode: forwards;
 }
  .linea2{
-    /* position: absolute; */
     margin:0 45vw;
     border-top: 4px solid #F9F9F9;
     animation-duration: 3s;
     animation-name:linea2;
-    animation-delay: 1.8s;
+    animation-delay: 1.3s;
     animation-fill-mode: forwards;
     opacity:0;
     color: #393939;
 }
-.linea3{
-    position:absolute;
-   bottom: 10vh;
-    border-top: 4px solid #F9F9F9;
-    animation-duration: 3s;
-    animation-name:linea3;
-    animation-delay: 3.8s;
-    animation-fill-mode: forwards;
-    opacity:0;
-}
-.linea4{
-    position:absolute;
-    bottom: 20vh;
-    border-top: 4px solid #F9F9F9;
-    animation-duration: 3s;
-    animation-name:linea4;
-    animation-delay: 3.8s;
-    animation-fill-mode: forwards;
-    opacity:0;
-} 
-.linea5{
-    position:absolute;
-    top: 30vh;
-    border-top: 4px solid #F9F9F9;
-    animation-duration: 3s;
-    animation-name:linea5;
-    animation-delay: 3.8s;
-    animation-fill-mode: forwards;
-    opacity:0;
-} 
-.linea6{
-    position:absolute;
-    top: 10vh;
-    border-top: 4px solid #F9F9F9;
-    animation-duration: 3s;
-    animation-name:linea6;
-    animation-delay: 3.8s;
-    animation-fill-mode: forwards;
-    opacity:0;
-} 
+
+
 
 @keyframes menufijo {
+   
     100%{
-        top:0;
-
+        position: fixed;
+        top: 0;
+        z-index: +20;
     }
     
-}
+ }
 @keyframes presentacion {
-    0%{}
-    100%{
+    0%{ opacity: 0; 
         position: absolute;
-        z-index: -100;
-        transform: scaleY(0);
-        /* background-color: white; */
+        z-index: -100; 
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    100%{
+         position: absolute;
+        z-index: -100; 
+        transform: scale(0);
+        opacity: 0;
     }
     } 
+@keyframes partearriba {
+    0%{  }
+
+    100%{
+        transform: translateY(-100%);
+    }
+    } 
+@keyframes parteabajo {
+        0%{   }
+  
+        100%{ 
+        transform: translateY(100%);
+        }
+        }  
  
 @keyframes linea1 {
     0%{
-        margin-right: 100vw;
+       
     }   
+    100%{
+        opacity: 1;
+        margin: 0;
+        width: 100vw;
+    }
 }
 @keyframes linea2 {
     0%{
-        opacity: 0;
         margin-right: 100%;
     }  
-   
+  
     100%{
-        opacity: 0.5;
+      
+       opacity: 0.5;
     }
   
 }
-@keyframes linea3 {
-    0%{
-        opacity: 0;
-        margin-left: 100%;
-    }  
-    100%{
-        opacity: 0.5;
-    }
-  
-}
-@keyframes linea4 {
-    0%{
-        opacity: 0;
-        
-    }  
-    100%{
-        margin-left: 99%;
-        opacity: 0.5;
-    }
-  
-}
-@keyframes linea5 {
-    0%{
-        opacity: 0;
-        margin-left: 100%;
-    }  
-    100%{
-        opacity: 0.5;
-    }
-  
-}
-@keyframes linea6{
-    0%{
-        opacity: 0;
-        
-    }  
-    100%{
-        margin-left: 99%;
-        opacity: 0.5;
-    }
-  
-}
+
+
 
 @keyframes nombre {
     0%{
