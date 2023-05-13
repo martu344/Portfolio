@@ -5,17 +5,16 @@
     padding:0;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;  
 }
 .menupadre{
-    /* position: fixed;
-    top: 0;
-    z-index: +20;  */
+    background-color: white;
     width: 100vw;
     padding-top: 10vh;
+    padding-bottom: 5vh;
     animation-name: menufijo;
     animation-fill-mode: forwards;
-    animation-delay: 12s;
+    animation-delay: 9s;
 }
 
 .menu{
@@ -27,7 +26,7 @@ body{
     flex-direction: column;
     align-items: stretch;
     animation-name: presentacion;
-    animation-delay: 10s;
+    animation-delay: 9s;
     animation-duration: 0.1s; 
     animation-fill-mode: forwards;
     
@@ -39,20 +38,70 @@ nav a{
     text-decoration: none;
     color: #393939;
     font-size: small;
-
-    /* align-items: end; */
 }
 .principal{
     margin-top: 20vh;
 }
-.principal2{
-    display: flex;
-    margin-left: 20vw;
+
+.principalfondo{
+background-color: #F9F9F9;
+height: 80vh;
 }
+.principal2{
+    position: absolute;
+    z-index: 1;
+  background-color: transparent;
+    display: flex;
+   padding-left: 15vw;
+   
+}
+.redondo{
+position: absolute;
+z-index: -10;
+top: 5vh;
+left: 40vw;
+ background-color: white;
+ border-radius: 100%;
+ width: 30vw;
+ height: 60vh;
+ /* border: 1px solid black; */
+}
+.imageningreso{
+    margin-top: 15vh;
+    margin-left: 10vw;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 100%;
+}
+.fondo2{
+    height: 50vh;
+    padding-left: 15vw;
+}
+.fondo2 h1{
+    line-height: 8vh;
+    margin-top: 5vh;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 5vh;
+    display: inline;
+}
+
+.fondo2 p{
+    margin-top: 5vh;
+    font-size: small;
+    line-height: 4vh;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 50,
+    'opsz' 48
+  }
 
 .mitrabajo{
     display: block;
-    width: 9vw;
+    width: 10vw;
     font-size: small;
     font-weight: bold;
     color: #393939;
@@ -62,10 +111,23 @@ nav a{
     margin-left: 2vw;
 
 }
+
+.textoingreso a{
+    color: #393939;
+    text-decoration: underline;
+    
+}
 .textoingreso p{
     font-size: small;
     line-height: 4vh;
+    
 }
+.separador{
+    display: inline;
+    margin: 0 1.5vw;
+}
+
+
 
 .diseñador{
     line-height: 8vh;
@@ -160,6 +222,7 @@ nav a{
 
     100%{
         transform: translateY(-100%);
+        opacity: 0.2;
     }
     } 
 @keyframes parteabajo {
@@ -167,6 +230,7 @@ nav a{
   
         100%{ 
         transform: translateY(100%);
+        opacity: 0.2;
         }
         }  
  
