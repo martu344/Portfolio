@@ -7,6 +7,23 @@
 body{
     font-family: 'Roboto', sans-serif;  
 }
+/* personalizacion de barra para firefox */
+.proyectos::-webkit-scrollbar {
+  display:none
+  }
+
+.proyectos {
+    scrollbar-width: none;
+  /* -ms-overflow-style: none; */
+  }
+  html{
+    -ms-overflow-style: none;
+    scrollbar-color: #e4e3e3 white; 
+    scrollbar-width: thin;
+  }
+
+  
+
 .menupadre{
     background-color: white;
     width: 100vw;
@@ -74,11 +91,11 @@ left: 40vw;
     border-radius: 100%;
 }
 .fondo2{
-    height: 50vh;
-    padding-left: 15vw;
+    padding: 100px 12vw;
+    height: 200px;
 }
 .fondo2 h1{
-    line-height: 8vh;
+    line-height: 20px;
     margin-top: 5vh;
     font-size: 3vw;
     font-weight: 600;
@@ -87,7 +104,8 @@ left: 40vw;
 }
 
 .fondo2 p{
-    margin-top: 5vh;
+    color: #393939;
+    margin-top: 10px;
     font-size: small;
     line-height: 4vh;
 }
@@ -119,7 +137,8 @@ left: 40vw;
 }
 .textoingreso p{
     font-size: small;
-    line-height: 4vh;
+    line-height: 25px;
+    color: #393939;
     
 }
 .separador{
@@ -190,8 +209,95 @@ left: 40vw;
     opacity:0;
     color: #393939;
 }
+.imagen1{
+    width: 500px;
+    transform: scaleX(0);
+    /* transform: translateX(-100); */
+    margin-left: 900px;
+    transition: 1s;
 
 
+}
+.numero{
+    color: #393939;
+    margin: 0 1vw;
+}
+.numerogrande{
+    position: absolute;
+    left: 25vw;
+    color: #393939;
+    opacity: 0.5;
+    font-size: 100px;
+    transform: scale(0);
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.referencia{
+    display: flex;
+    align-items: center;
+    background-color: #F9F9F9;
+    height: 300px;
+    color: #393939;
+    border-top: 0.1px solid #dad8d8;
+    border-bottom:0.1px solid #dad8d8 ;
+
+}
+.referencia:hover{
+    color: black;
+    font-size: 25px;
+    background-color: white;
+    
+}
+.referencia:hover .linea{
+    width: 220px;
+}
+.referencia:hover .imagen1{
+    display:inline;
+    margin-left: 100px;
+    transform: scaleX(1);
+}
+.referencia:hover .numerogrande{
+    transform: scale(1);
+    
+}
+
+
+
+.linea{
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+    color: white;
+    width: 150px;/* pasa a 190 con hover */
+    transition: 1s;
+    
+}
+.proyectos{
+    height: 900px; 
+  overflow-y: scroll; 
+}
+
+.seccionmasproyectos{
+    /* width: 300px; */
+    height: 200px;
+    padding: 100px 12vw;
+}
+.seccionmasproyectos p{
+    color: #393939;
+    font-size: small;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.seccionmasproyectos h1{
+line-height: 20px;
+font-size: 3vw;
+font-weight: 600;
+}
+footer{
+    color: white;
+    background-color: black;
+    height: 400px;
+}
 
 @keyframes menufijo {
    
