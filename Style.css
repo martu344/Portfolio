@@ -5,6 +5,7 @@
     padding:0;
 }
 body{
+    background-color: #F9F9F9;
     font-family: 'Roboto', sans-serif;  
 }
 /* personalizacion de barra para firefox */
@@ -14,74 +15,84 @@ body{
 
 .proyectos {
     scrollbar-width: none;
-  /* -ms-overflow-style: none; */
   }
   html{
-    -ms-overflow-style: none;
-    scrollbar-color: #e4e3e3 white; 
+    /* -ms-overflow-style: none; */
+    scrollbar-color: #e4e3e3 #FFFFFF; 
     scrollbar-width: thin;
   }
 
   
+/* header */
 
-.menupadre{
-    background-color: white;
-    width: 100vw;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
+
+.menu{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     animation-name: menufijo;
     animation-fill-mode: forwards;
     animation-delay: 9s;
-}
-
-.menu{
     display: flex;
     justify-content: flex-end;
 }
-.presentacion{
-    display:flex;
-    flex-direction: column;
-    align-items: stretch;
-    animation-name: presentacion;
-    animation-delay: 9s;
-    animation-duration: 0.1s; 
-    animation-fill-mode: forwards;
-    
-    
+.menu img{
+    width: 70px;
+    margin-right: 780px;
+    margin-left: 20px;
 }
-nav a{
-    margin-right: 2vw;
+
+.menuindividual{
+    text-align: center;
+    margin-right: 10px;
+    width: 80px;
+    margin-top: 30px;
     font-weight: bold;
     text-decoration: none;
     color: #393939;
     font-size: small;
 }
+.menuindividual img{
+    width: 10px;
+    transform: translateX(20px);
+    display: none;
+
+}
+.menuindividual:hover img{
+    display: inline;
+    color: black;
+}
+.menuindividual:hover p{
+    color: black;
+}
+
+/* main */
+
 .principal{
     margin-top: 20vh;
 }
 
 .principalfondo{
-background-color: #F9F9F9;
-height: 80vh;
+    background-color: #F9F9F9;
+    height: 500px;
 }
 .principal2{
     position: absolute;
     z-index: 1;
-  background-color: transparent;
+    background-color: transparent;
     display: flex;
-   padding-left: 15vw;
+    padding-left: 15vw;
    
 }
 .redondo{
-position: absolute;
-z-index: -10;
-top: 5vh;
-left: 40vw;
- background-color: white;
- border-radius: 100%;
- width: 30vw;
- height: 60vh;
- /* border: 1px solid black; */
+    position: absolute;
+    z-index: -10;
+    top: 50px;
+    left: 40vw;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
 }
 .imageningreso{
     margin-top: 15vh;
@@ -91,12 +102,14 @@ left: 40vw;
     border-radius: 100%;
 }
 .fondo2{
-    padding: 100px 12vw;
-    height: 200px;
+    background-color: #FFFFFF;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 12vw;
+    height: 150px;
 }
 .fondo2 h1{
     line-height: 20px;
-    margin-top: 5vh;
     font-size: 3vw;
     font-weight: 600;
     margin-bottom: 5vh;
@@ -116,21 +129,55 @@ left: 40vw;
     'GRAD' 50,
     'opsz' 48
   }
-
+.linkgit{
+    margin-top: 200px;
+}
 .mitrabajo{
     display: block;
     width: 10vw;
     font-size: small;
     font-weight: bold;
     color: #393939;
-   text-decoration: none;
-   margin-top: 10vh;
-    margin-bottom: 8vh;
-    margin-left: 2vw;
-
+    text-decoration: none;
+    margin-top:10px;
 }
 
+.seccionboton0{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 180px;
+    margin-top: 90px;
+}
+.boton0{
+    position: absolute;
+    z-index: -1;
+    left: 20px;
+    padding:8px;
+    border-radius: 100%;
+    background-color: #e4e3e3;
+    width: 140px;
+    height: 20px;
+    transform: scaleX(.3) translateX(-200px);
+    transition: 1s;
+}
+.seccionboton0:hover .boton0{
+    
+    border-radius: 50px / 50px;
+    transform: translate(0) scale(1) ;
+    /* background-color: #FFFFFF; */
+}
+
+.botonfooter:hover a{
+    color: #363636;
+}
+
+
+
 .textoingreso a{
+    font-size: small;
     color: #393939;
     text-decoration: underline;
     
@@ -146,15 +193,25 @@ left: 40vw;
     margin: 0 1.5vw;
 }
 
-
-
 .diseñador{
-    line-height: 8vh;
-    margin-top: 5vh;
+    line-height: 50px;
+    margin-top: 30px;
     font-size: 3vw;
     font-weight: 600;
-    margin-bottom: 5vh;
+    margin-bottom: 50px;
 } 
+
+/* Presentacion */
+.presentacion{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    animation-name: presentacion;
+    animation-delay: 9s;
+    animation-duration: 0.1s; 
+    animation-fill-mode: forwards;
+  
+}
 .nombre{
     font-weight: 400;
     width: 100vw;
@@ -182,8 +239,7 @@ left: 40vw;
     animation-name: parteabajo;
     animation-delay: 7.5s;
     animation-duration: 2s;
-    animation-fill-mode: forwards;
-    
+    animation-fill-mode: forwards;  
 }
 
 .linea1{
@@ -209,14 +265,17 @@ left: 40vw;
     opacity:0;
     color: #393939;
 }
+
+/* Main/proyectos */
 .imagen1{
     width: 500px;
     transform: scaleX(0);
-    /* transform: translateX(-100); */
     margin-left: 900px;
     transition: 1s;
-
-
+}
+.proyectos{
+    height: 600px; 
+  overflow-y: scroll; 
 }
 .numero{
     color: #393939;
@@ -234,52 +293,79 @@ left: 40vw;
 }
 
 .referencia{
+    width: 100vw;
     display: flex;
     align-items: center;
     background-color: #F9F9F9;
-    height: 300px;
+    height: 200px;
     color: #393939;
     border-top: 0.1px solid #dad8d8;
     border-bottom:0.1px solid #dad8d8 ;
+}
+.referencia a{
+    position: absolute;
+    z-index: 9;
+    left: 810px;
+    text-decoration: none;
+    color: #393939;
+    font-size: small;
+    font-weight: 600;
+    transition: 0.5s;
+    
+}
+.boton{
+    position: absolute;
+    z-index: 9;
+    left: 800px;
+    padding:8px;
+    border-radius: 100%;
+    background-color: #e4e3e3;
+    width: 140px;
+    height: 20px;
+    transform: scaleX(.3) translateX(-200px);
+    /* opacity: 0.5; */
+    transition: 1s;
 
 }
+
+.referencia:hover .boton{
+    border-radius: 50px / 50px;
+    transform: translate(0) scale(1) ;
+    background-color:  #e4e3e3;
+}
+
 .referencia:hover{
+    background-color: #FFFFFF;
     color: black;
     font-size: 25px;
-    background-color: white;
-    
 }
 .referencia:hover .linea{
     width: 220px;
 }
 .referencia:hover .imagen1{
     display:inline;
-    margin-left: 100px;
+    margin-left: 200px;
     transform: scaleX(1);
-}
-.referencia:hover .numerogrande{
-    transform: scale(1);
     
 }
-
-
-
+.referencia:hover .numerogrande{
+    transform: scale(1); 
+}
 .linea{
     text-decoration-line: line-through;
     text-decoration-color: black;
-    color: white;
-    width: 150px;/* pasa a 190 con hover */
-    transition: 1s;
-    
-}
-.proyectos{
-    height: 900px; 
-  overflow-y: scroll; 
+    color: #FFFFFF;
+    width: 150px;
+    transition: 1s; 
 }
 
+
 .seccionmasproyectos{
-    /* width: 300px; */
-    height: 200px;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    background-color: #FFFFFF;
+    height: 180px;
     padding: 100px 12vw;
 }
 .seccionmasproyectos p{
@@ -293,12 +379,71 @@ line-height: 20px;
 font-size: 3vw;
 font-weight: 600;
 }
+.seccionmasproyectos a{
+    text-decoration: none;
+    color: #272727;
+}
 footer{
-    color: white;
-    background-color: black;
-    height: 400px;
+    margin-top: 380px;
+    color: #FFFFFF;
+    background-color: #272727;
+    height: 350px;
+    padding-top: 100px;
+
+}
+.botonfooter{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 62px;
+    margin-left: 600px;
+}
+.boton1{
+    position: absolute;
+    z-index: 0;
+    left: 590px;
+    padding:8px;
+    border-radius: 100%;
+    background-color: #363636;
+    width: 140px;
+    height: 20px;
+    transform: scaleX(.3) translateX(-200px);
+    /* opacity: 0.5; */
+    transition: 1s;
+}
+.botonfooter:hover .boton1{
+    border-radius: 50px / 50px;
+    transform: translate(0) scale(1) ;
 }
 
+.botonfooter:hover a{
+    color: #FFFFFF;
+}
+
+.pie{
+    text-align: center;
+}
+.pie h1{
+    margin-bottom: 20px;
+    font-size: 3vw;
+    font-weight: 600;
+}
+.pie p{
+    font-size: small;
+    margin-bottom: 80px;
+}
+.pie a{
+    margin-top: 8px;
+    position: absolute;
+    z-index: 3;
+    text-decoration: none;
+    color: #FFFFFF;  
+}
+.pieB p{
+    margin-top: 130px;
+    text-align: center;
+    font-size:x-small;
+}
 @keyframes menufijo {
    
     100%{
@@ -361,9 +506,6 @@ footer{
     }
   
 }
-
-
-
 @keyframes nombre {
     0%{
         transform:scale(1.8);

@@ -7,10 +7,11 @@
     <title>Porfolio</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 </head>
 <body>
     <!-- Presentacion -->
-   <!-- <section class="presentacion">
+   <section class="presentacion">
         <div class="partearriba" >
             <h2 class="nombre"> Martin Bottaro</h2>
            
@@ -21,15 +22,30 @@
         </div>
         <div class="parteabajo" >
         </div>
-    </section>  -->
+    </section> 
     <!-- encabezado -->
-    <header class="menupadre">
+
+     <!-- menu -->
+    <header >
         <nav class="menu">
-            <img src="" alt="">
-            <a href="">HOME</a>
-            <a href="">ACERCA DE</a>
-            <a href="">TRABAJOS</a>
-            <a href="">CONTACTO</a>
+            <img src="logo.png" alt="">
+
+            <a href="#"class="menuindividual">
+                <p class="a1">HOME</p>
+                <img src="logo.png" alt="">
+            </a>
+            <a href="#" class="menuindividual">
+                <p class="a1">ACERCA DE</p>
+                <img src="logo.png" alt="">
+            </a>
+            <a href="#"  class="menuindividual">
+                <p class="a1">TRABAJOS</p>
+                <img src="logo.png" alt="">
+            </a>    
+            <a href="#"  class="menuindividual">
+                <p class="a1">CONTACTO</p>
+                <img src="logo.png" alt="">
+            </a>
         </nav>
     </header>
     <!-- Principal -->
@@ -39,10 +55,15 @@
             <div class="textoingreso">
                 <h1 class="diseñador">diseñador creativo <br> & desarrollador</h1>
                 <p>Hola, soy Martin Bottaro, un apasionado diseñador ux/ui y desarrollador front end  <br>  & back end, situado en Argentina.</p>
-                <a class="mitrabajo" href="">MIRA MI TRABAJO</a>
-                <a  href="">Dribble</a> <p class="separador">/</p>
-                <a  href="">Behance</a><p class="separador">/</p>
-                <a href="">GitHub</a>
+                <div class="seccionboton0">
+                    <p class="boton0"></p>
+                    <a class="mitrabajo" href="">MIRA MI TRABAJO</a>
+                </div>
+                <div class="linkgit" >
+                    <a  href="">Dribble</a> <p class="separador">/</p>
+                    <a  href="">Behance</a><p class="separador">/</p>
+                    <a  href="">GitHub</a>
+                </div>
             </div>
             <div class="redondo"></div>
             <div class="contendorimagen">
@@ -61,28 +82,38 @@
         <!-- proyectos -->
         <section class="proyectos">
             <div class="referencia">
-                <p class="linea">..................................</p> <p class="numero">01</p> <h1>FormularioSimple</h1>
+                <p class="linea">..................................</p> <p class="numero">01</p> <h1>GiftShop</h1>
                 <p class="numerogrande">01</p>
+                <p class="boton"></p>
+                <a href="#">Mirar proyecto</a>
                 <img class="imagen1" src="imgejemplo.png" alt="">
             </div>
             <div class="referencia">
-                <p class="linea">..................................</p> <p class="numero">01</p> <h1>FormularioSimple</h1>
-                <p class="numerogrande">01</p>
+                <p class="linea">..................................</p> <p class="numero">02</p> <h1>Ropa</h1>
+                <p class="numerogrande">02</p>
+                <p class="boton"></p>
+                <a href="#"> Mirar proyecto</a>
                 <img class="imagen1" src="imgejemplo.png" alt="">
             </div>
             <div class="referencia">
-                <p class="linea">..................................</p> <p class="numero">01</p> <h1>FormularioSimple</h1>
-                <p class="numerogrande">01</p>
+                <p class="linea">..................................</p> <p class="numero">03</p> <h1>Casas</h1>
+                <p class="numerogrande">03</p>
+                <p class="boton"></p>
+                <a href="#">Mirar proyecto</a>
                 <img class="imagen1" src="imgejemplo.png" alt="">
             </div>
             <div class="referencia">
-                <p class="linea">..................................</p> <p class="numero">01</p> <h1>FormularioSimple</h1>
-                <p class="numerogrande">01</p>
+                <p class="linea">..................................</p> <p class="numero">04</p> <h1>Otro mas</h1>
+                <p class="numerogrande">04</p>
+                <p class="boton"></p>
+                <a href="#">Mirar proyecto</a>
                 <img class="imagen1" src="imgejemplo.png" alt="">
             </div>
             <div class="referencia">
-                <p class="linea">..................................</p> <p class="numero">01</p> <h1>FormularioSimple</h1>
-                <p class="numerogrande">01</p>
+                <p class="linea">..................................</p> <p class="numero">05</p> <h1>El ultimo</h1>
+                <p class="numerogrande">05</p>
+                <p class="boton"></p>
+                <a href="#">Mirar proyecto</a>
                 <img class="imagen1" src="imgejemplo.png" alt="">
             </div>
          
@@ -90,15 +121,24 @@
         </section>
 
         <section class="seccionmasproyectos">
-            <p>tres mas</p>
-            <h1 >mira mas proyectos</h1>
+            <p>Tres mas</p>
+            <h1 ><a href="#"> mira mas proyectos</a></h1>
         </section>
         
     </main>
         <footer>
-           <h1>trabajemos juntos</h1>
+            <section class="pie">
+           <h1>Trabajemos juntos</h1>
            <p>Estoy disponible para trabajos freelance.</p>
-           <a href="#">DI HOLA</a>
+           <div class="botonfooter">
+                <p class="boton1"></p>
+                <a href="#">DI HOLA!</a>
+            </div>
+        </section>
+        <section class="pieB">
+            <p>Martin Bottaro 2023</p>
+
+        </section>
         </footer>
         
         
