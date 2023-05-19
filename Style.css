@@ -1,5 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
 
+
+@media (max-width: 800px) {
+
+    /* home */
+    .imagen1{
+        margin: 0;
+        display: none;
+    }
+    main .proyectos .referencia:hover .imagen1{
+        display:none;
+        margin-left: 0;
+        transform: scaleX(0);
+    
+    }
+    main .proyectos .referencia:hover .imagen2{
+        display:none;
+        margin-left: 0;
+        transform: scaleX(0);
+    
+    }
+    main .proyectos .referencia:hover .imagen3{
+        display:none;
+        margin-left: 0;
+        transform: scaleX(0);
+    
+    }
+    .imagen2{
+        margin: 0;
+        display: none;
+    }
+    .imagen3{
+        margin: 0;
+        display: none;
+    }
+    main .imageningreso{
+        display: none;
+    }
+    main .diseñador{
+        font-size: 4vw;
+    }
+    main .textoingreso p{
+        font-size: 2.5vw;
+    }
+    main .seccionboton0 {
+        display: none;
+    }
+    main .linkgit{
+      
+        margin-top: 8vw;
+    }
+    main .linkgit a{
+        font-size: 2vw;
+    }
+    main .fondo2 p{
+        font-size: 2.5vw;
+    }
+
+    /* about me */
+   header .menu a{
+        display: none;
+        
+    }
+    main .primerseccion p{
+        font-size: small;   
+        line-height: normal;
+        margin-left: 10vw;
+        width: 80vw;
+    }
+    main .primerseccion .imagen{
+        margin-bottom: 10vw;
+    }
+    main .primerseccion h1{
+        font-size: 4.5vw;
+    }
+    main .tercerseccion h4{
+        font-size: 3.5vw;
+}
+}
+
 *{
     margin: 0;
     padding:0;
@@ -7,7 +86,8 @@
 body{
     background-color: #F9F9F9;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    width: 100vw;
 }
 /* personalizacion de barra para firefox */
 .proyectos::-webkit-scrollbar {
@@ -45,6 +125,7 @@ body{
 }
 
 .menuindividual{
+    position: relative;
     text-align: center;
     margin-right: 10px;
     width: 80px;
@@ -53,12 +134,13 @@ body{
     text-decoration: none;
     color: #393939;
     font-size: small;
-    height: 20px;
+    height: 2vw;
 }
 .menuindividual img{
+    position: absolute;
     width: 0.8vw;
     height: 0.8vw;
-    transform: translateX(2.7vw);
+    left: 45%;
     display: none;
 
 }
@@ -73,7 +155,8 @@ body{
 /* main */
 
 .principal{
-    margin-top: 15vw;
+    margin-top: 8vw;
+    width: 100vw;
 }
 
 .principalfondo{
@@ -117,13 +200,14 @@ body{
     border-radius: 100%;
 }
 .fondo2{
+    position: relative;
     background-color: #FFFFFF;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    padding-left: 12vw;
-    height: 150px;
+    height:30vw;
 }
 .fondo2 h1{
+    position: absolute;
+    top: 40%;
+    left: 15%;
     line-height: 20px;
     font-size: 3vw;
     font-weight: 600;
@@ -132,6 +216,9 @@ body{
 }
 
 .fondo2 p{
+    position: absolute;
+    top: 50%;
+    left: 15%;
     color: #393939;
     margin-top: 10px;
     font-size: small;
@@ -142,10 +229,14 @@ body{
     'FILL' 0,
     'wght' 200,
     'GRAD' 50,
-    'opsz' 48
+    'opsz' 48;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
   }
 .linkgit{
-    margin-top: 200px;
+    margin-top: 15vw;
 }
 .mitrabajo{
     display: flex;
@@ -181,7 +272,6 @@ body{
 
     border-radius: 50px / 50px;
     transform: translate(0) scale(1) ;
-    /* background-color: #FFFFFF; */
 }
 
 .botonfooter:hover a{
@@ -282,7 +372,7 @@ body{
 
 /* Main/proyectos */
 .imagen1{
-    width: 500px;
+    width: 40vw;
     transform: scaleX(0);
     margin-left: 100vw;
     transition: 1s;
@@ -354,7 +444,6 @@ body{
     width: 130px;
     height: 20px;
     transform: scaleX(.3) translateX(-200px);
-    /* opacity: 0.5; */
     transition: 1s;
 
 }
@@ -404,11 +493,9 @@ body{
 
 
 .seccionmasproyectos{
-    position: absolute;
-    z-index: 10;
-    width: 100vw;
+
     background-color: #FFFFFF;
-    height: 180px;
+    height: 20vw;
     padding: 100px 12vw;
 }
 .seccionmasproyectos p{
@@ -418,28 +505,28 @@ body{
     margin-top: 50px;
 }
 .seccionmasproyectos h1{
-line-height: 20px;
-font-size: 3vw;
-font-weight: 600;
+    line-height: 20px;
+    font-size: 3vw;
+    font-weight: 600;
 }
 .seccionmasproyectos a{
     text-decoration: none;
     color: #272727;
 }
 footer{
-    margin-top: 380px;
+    position: relative;
     color: #FFFFFF;
     background-color: #272727;
-    height: 350px;
-    padding-top: 100px;
+    height: 30vw;
+    padding-top: 10vw;
 
 }
 .botonfooter{
     display: flex;
     justify-content: center;
     height: 30px;
-    width: 162px;
-    margin-left: 560px;
+    width: 16vw;
+    left: 42%;
     position: absolute;
     z-index: 3;
 }
@@ -447,13 +534,12 @@ footer{
 .boton1{
     position: absolute;
     z-index: -1;
-    left: 28px;
-    padding:8px;
+    padding:1vw;
     border-radius: 100%;
     background-color: #363636;
-    width: 100px;
-    height: 20px;
-    transform: scaleX(.3) translateX(-180px);
+    width: 8vw;
+    height: 1vw;
+    transform: scaleX(.3) translateX(-10vw);
     transition: 1s;
 }
 
@@ -470,24 +556,26 @@ footer{
     text-align: center;
 }
 .pie h1{
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
     font-size: 3vw;
     font-weight: 600;
 }
 .pie p{
     font-size: small;
-    margin-bottom: 80px;
+    margin-bottom: 8vw;
 }
 .pie a{
     /* position: absolute;
     z-index: 3; */
-    margin-top: 7px;
-    margin-right: 8px;
+    margin-top: 1vw;
+    margin-right: 1vw;
     text-decoration: none;
     color: #FFFFFF;
 }
 .pieB p{
-    margin-top: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 42%;
     text-align: center;
     font-size:x-small;
 }
@@ -573,14 +661,14 @@ footer{
     margin-left: 20vw;
     font-weight: lighter;
     line-height: 6vw;
-    margin-bottom: 100px;
+    margin-bottom: 10vw;
 }
 .resaltado{
     font-weight: 600;
 }
 .imagen{
-    width: 250px;
-    margin-left: 150px;
+    width: 20vw;
+    margin-left: 10vw;
 }
 .primerseccion p{
     margin-left: 50vw;
@@ -589,13 +677,39 @@ footer{
     width: 45vw;
 }
 .letras{
-    background-color: #363636;
-    height: 200px;
-    padding: 150px 0;
+    position: relative;
+    background-color: #181818;
+    height: 30vw;
+    width: 100vw;
+    padding:1vw 0;
+    overflow-x: hidden;
+}
+.letras h1{
+    white-space: nowrap;
+    position: absolute;
+    left: -2vw;
+    font-size: 5vw;
+    color:  #181818;
+    text-shadow: -0.5px -0.5px 0 #F9F9F9, 0.5px 0.5px 0 #F9F9F9, 0.5px -1px 0 #F9F9F9;
+    opacity: 0.8;
+    margin-top: 2vw;
+}
+.letras h1 span{
+    margin: 0 4vw;
+}
+.letras .h11{
+    position: absolute;
+    left: -2vw;
+    top: 10vw;
+}
+.letras .h111{
+    position: absolute;
+    left: -2vw;
+    top: 20vw;
 }
 .segundaseccion{
     background-color: #FFFFFF;
-    padding: 150px 0;
+    padding: 13vw 0;
 }
 .segundaseccion h1{
     font-size: 3.5vw;
@@ -632,22 +746,27 @@ footer{
     list-style: none;
 }
 .tercerseccion h4{
-    margin-top: 20px;
-    margin-left: 630px;
-    line-height: 35px;
-    width: 550px;
+    font-size: 1.5vw;
+    margin-top: 1.5vw;
+    margin-left: 50vw;
+    width: 30vw;
     text-decoration: none;
 }
+
 .cuartaseccion{
     background-color: #FFFFFF;
-    padding: 150px 0;
-    height: 200px;
+    /* padding: 150px 0; */
+    height: 40vw;
+    width: 100vw;
+    position: relative;
 
 }
 .cuartaseccion h1{
-    padding: 0 50px;
     text-align: center;
     font-size: 3.5vw;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
 }
 .cuartaseccion p{
     /* margin-top: 40px; */
@@ -655,9 +774,32 @@ footer{
     font-size: small;
     line-height: 3.5vw;
     margin-right: 10vw;
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    right: 10%;
 
-    
-
+}
+.cuartaseccion .redondo2{
+    width: 30vw;
+    height: 30vw;
+    border-radius:100%;
+    border: 1px solid black;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 35%;
+    top: 13%;
+}
+.redondo2 .redondochico{
+    width: 15vw;
+    height: 15vw;
+    border-radius:100%;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 24%;
+    top: 24%;
 }
 .piedeaboutme{
     margin: 0;
