@@ -4,35 +4,23 @@
 @media (max-width: 800px) {
 
     /* home */
-    .imagen1{
-        margin: 0;
-        display: none;
+ 
+    .referencia:hover .imagen1{
+        display:inline;
+        margin-left: 20vw;
+        transform: scaleX(1);
     }
-    main .proyectos .referencia:hover .imagen1{
-        display:none;
-        margin-left: 0;
-        transform: scaleX(0);
+    .referencia:hover .imagen2{
+        display:inline;
+        margin-left: 20vw;
+        transform: scaleX(1);
     
     }
-    main .proyectos .referencia:hover .imagen2{
-        display:none;
-        margin-left: 0;
-        transform: scaleX(0);
+    .referencia:hover .imagen3{
+        display:inline;
+        margin-left: 20vw;
+        transform: scaleX(1);
     
-    }
-    main .proyectos .referencia:hover .imagen3{
-        display:none;
-        margin-left: 0;
-        transform: scaleX(0);
-    
-    }
-    .imagen2{
-        margin: 0;
-        display: none;
-    }
-    .imagen3{
-        margin: 0;
-        display: none;
     }
     main .imageningreso{
         display: none;
@@ -59,7 +47,20 @@
     footer .seccionboton0 {
         display: none;
     }
-
+    main .proyectos .referencia:hover .linea{
+        width: 24vw;
+        font-size: 2.5vw;
+    }
+    main .proyectos .referencia .linea{
+        width: 20vw;
+        font-size: 2vw;
+    }
+     main .proyectos .referencia .numerogrande{
+        left: 30vw;
+    } 
+    main .proyectos .referencia h1{
+        font-size: 3vw;
+    } 
     /* about me */
    header .menu a{
         display: none;
@@ -126,6 +127,19 @@
     footer .pie .seccionboton0{
         display: none;
     }
+
+    /* contacto */
+    body .formulario p{
+        font-size:1.5vw;
+    }
+    body .formulario .input input{
+        font-size:1.5vw;
+    }
+    body .formulario .input textarea{
+        font-size:1.5vw;
+
+    }
+
 }
 
 
@@ -206,6 +220,7 @@ body{
 /* main */
 
 .principal{
+    position: relative;
     margin-top: 8vw;
     width: 100vw;
 }
@@ -222,6 +237,12 @@ body{
     display: flex;
     padding-left: 15vw;
 
+}
+.scroll{
+    position: absolute;
+    left: 95%;
+    top: 15%;
+    opacity: 0.7;
 }
 
 .material-symbols-outlined { /*flehca*/
@@ -257,10 +278,11 @@ body{
     background-color: #FFFFFF;
     height:30vw;
 }
-.fondo2 .material-symbols-outlined{
-    display: absolute;
-    left: 40%;
+.fondo2 img{
+    position: absolute;
+    left: 42%;
     top: 40%;
+    width: 3vw;
 }
 .fondo2 h1{
     position: absolute;
@@ -303,7 +325,7 @@ body{
     justify-content: center;
     height: 3vw;
     width: 13vw;
-    margin-top: 7vw;
+    margin-top: 8vw;
 }
 .boton0{
     position: absolute;
@@ -311,8 +333,8 @@ body{
     padding:8px;
     border-radius: 100%;
     background-color: #e4e3e3;
-    width: 150px;
-    height: 20px;
+    width: 11vw;
+    height: 1.3vw;
     transform: scaleX(.3) translateX(-15vw);
     transition: 1s;
 }
@@ -426,20 +448,18 @@ body{
     transition: 1s;
 }
 .imagen2{
-    width: 500px;
+    width: 40vw;
     transform: scaleX(0);
     margin-left: 100vw;
     transition: 1s;
 }
 .imagen3{
-    width: 500px;
+    width: 40vw;
     transform: scaleX(0);
     margin-left: 100vw;
     transition: 1s;
 }
-.proyectos{
-    height: 600px;
-}
+
 .numero{
     color: #393939;
     margin: 0 1vw;
@@ -461,12 +481,15 @@ body{
     display: flex;
     align-items: center;
     background-color: #F9F9F9;
-    height: 200px;
+    height: 20vw;
     color: #393939;
     border-top: 0.1px solid #dad8d8;
     border-bottom:0.1px solid #dad8d8 ;
 }
+.referencia h1{
+    font-size: 2vw;
 
+}
 
 .referencia a{
     text-decoration: none;
@@ -491,16 +514,15 @@ body{
 .referencia:hover{
     background-color: #FFFFFF;
     color: black;
-    font-size: 25px;
+    font-size: 2vw;
 }
 .referencia:hover .linea{
-    width: 220px;
+    width: 20vw;
 }
 .referencia:hover .imagen1{
     display:inline;
     margin-left: 30vw;
     transform: scaleX(1);
-
 }
 .referencia:hover .imagen2{
     display:inline;
@@ -521,22 +543,27 @@ body{
     text-decoration-line: line-through;
     text-decoration-color: black;
     color: #FFFFFF;
-    width: 150px;
+    width: 15vw;
     transition: 1s;
 }
 
 /* seccion mas proyectos */
 .seccionmasproyectos{
-
+    position: relative;
     background-color: #FFFFFF;
     height: 20vw;
-    padding: 100px 12vw;
+    padding: 10vw 12vw;
+}
+.scrolltopnegro{
+    position: absolute;
+    left: 95%;
+    opacity: 0.9;
 }
 .seccionmasproyectos p{
     color: #393939;
     font-size: small;
-    margin-bottom: 15px;
-    margin-top: 50px;
+    margin-bottom: 2vw;
+    margin-top: 5vw;
 }
 .seccionmasproyectos h1{
     line-height: 20px;
@@ -552,63 +579,91 @@ body{
 
 footer{
     position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
     color: #FFFFFF;
     background-color: #272727;
-    height: 30vw;
-    padding-top: 10vw;
-
+    height: 39vw;
 }
-.pie .seccionboton0{
+.seccionredondo{
+    position: relative;
+    width: 30vw;
+    height: 20vw;
+}
+.redondorayado{
+    opacity: 0.5;
     position: absolute;
-    left: 45%;
+    z-index: 0;
+    left: 65%;
+    bottom:70%;
+    border-radius: 100%;
+    width: 12vw;
+    height: 12vw;
+    background-image: 
+    repeating-linear-gradient(
+        -45deg,
+        #FFFFFF 0px,
+        #272727 2px,
+        #272727 9px,
+        #FFFFFF 0px
+    );
 }
-.pie .seccionboton0 .boton0{
+
+
+footer .seccionboton0 .boton0{
     background-color: #363636;
-    left: 20%;
+    left: 22%;
     width: 8vw;
 }
-.pie .seccionboton0 .material-symbols-outlined{
-   top: 25%;
+footer .seccionboton0 .material-symbols-outlined{
+   top: 15%;
    left: 70%;
 }
 
-
-.botonfooter:hover a{
-    color: #FFFFFF;
-}
-
-.pie{
-    text-align: center;
-}
-.pie h1{
-    margin-bottom: 2vw;
+footer h1{
+    position: absolute;
+    z-index: 1;
     font-size: 3vw;
     font-weight: 600;
+    letter-spacing: 1px;
 }
-.pie p{
-    font-size: small;
-    margin-bottom: 8vw;
-}
-.pie a{
-    margin-top: 1vw;
+
+footer .seccionboton0 a{
+    margin-top: 0.5vw;
     margin-right: 1vw;
     text-decoration: none;
     color: #FFFFFF;
 }
-.pieB p{
-    position: absolute;
-    bottom: 0;
-    left: 42%;
-    text-align: center;
+footer .seccionredondo p{
+    position:absolute;
+    left: 25%;
+    top: 35%;
+    font-size: small;
+}
+.pieB{
+    display: flex;
+    position:absolute;
+    left: 40%;
+    bottom: 1%;
     font-size:x-small;
 }
+.pieB p{
+    border-right: 1px solid #FFFFFF;
+    padding-right: 1vw;
+}
+.pieB a{
+    margin: 0 1vw;
+    color: #FFFFFF;
+}
+
+
 @keyframes menufijo {
 
     100%{
         position: fixed;
         top: 0;
         z-index: +20;
-
     } 
 
  }
@@ -642,7 +697,7 @@ footer{
         transform: translateY(100%);
         opacity: 0.2;
         }
-        }
+    }
 
 @keyframes linea1 {
     0%{
@@ -663,17 +718,13 @@ footer{
 
        opacity: 0.5;
     }
-
 }
 @keyframes nombre {
     0%{
         transform:scale(1.8);
         opacity:0;
     }
-
 }
-
-
 /* acerca de */
 
 .primerseccion{
@@ -777,7 +828,6 @@ footer{
 
 .cuartaseccion{
     background-color: #FFFFFF;
-    /* padding: 150px 0; */
     height: 40vw;
     width: 100vw;
     position: relative;
@@ -791,7 +841,6 @@ footer{
     top: 40%;
 }
 .cuartaseccion p{
-    /* margin-top: 40px; */
     text-align: end;
     font-size: small;
     line-height: 3.5vw;
@@ -823,15 +872,74 @@ footer{
     left: 24%;
     top: 24%;
 }
-.piedeaboutme{
-    margin: 0;
+/* foooter aboutme */
+.footeracercade{
+    display: flex;
 }
+
+.footeraboutme{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5vw;
+  width: 50vw;
+
+}
+
+.footeraboutme .seccionredondo .redondorayado{
+    left: -10%;  
+}
+.footeraboutme .seccionredondo h1{
+    bottom: 100%;
+    left: 5%;  
+}
+.footeraboutme .seccionredondo p{
+    top: 5%;
+    left: 5%;  
+}
+.footeraboutme .seccionboton0{
+margin-top: 13vw; 
+}
+
+.footeraboutme2{
+    position: relative;
+    width: 50vw;
+    height: 30vw;
+}
+.footeraboutme2 .linkgit{
+    position: absolute;
+    left: 45%;
+    bottom: 55%;
+}
+.footeraboutme2 a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size:small;
+    opacity: 0.7;
+}
+.footeraboutme2 img{
+ position: absolute;
+ left: 85%;
+ top: 70%;
+ opacity: 0.7;
+
+}
+
+
+
 /* contacto */
+.imgcontact{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+}
 .formulario{
    display: flex;
   align-items: center; 
   justify-content: center; 
   height: 100vh; 
+}
+.formulario h1{
+    font-size: 2vw;
 }
 
 .formulario p{
@@ -858,16 +966,18 @@ footer{
     font-family: 'Roboto', sans-serif;
     font-size: small;
     height: 10vw;
+    width: 100%;
     resize: none;
     
 }
 .formulario div{
+    width: 40vw;
     position: relative;
 }
 .input p{
     position: absolute;
     z-index: 10;
-    top: 88%;
+    top: 70%;
     left: 93%;
     color: #8b8b8b;
     font-size: small;
@@ -882,21 +992,50 @@ footer{
 .formulario a{
     text-decoration: none;
     color: #363636;
-    top: 3000%;
    
 }
-.formulario .seccionboton0{
-    
-    left: 50%;
 
+.formulario .seccionboton0{
+    position: relative;
+    z-index: 1;
+    height: 3vw;
+    width: 9.5vw;
+    left: 60%;
+    margin-top: 2vw;
+}
+.formulario .seccionboton0 .material-symbols-outlined{
+    position: absolute;
+    left:70%;
+  top: 0%;
+ 
+}
+.formulario .seccionboton0 a{
+    position: absolute;
+    z-index: 1;
 }
 .formulario .boton0{
+    position: absolute;
+    z-index: -1;
     left: 20%;
-   bottom: 0%;
+    bottom: -35%;
+    padding:8px;
+    border-radius: 100%;
+    background-color: #e4e3e3;
+    width: 8vw;
+    height: 1.3vw;
+    transform: scaleX(.3) translateX(-15vw);
+    transition: 1s;
 }
+
 .piecontacto{
-    height: 20vw;
+    height: 5vw;
+    background-color:#F9F9F9;
 }
-/* input:valid {
-    background-color: rgb(199, 34, 28);
-  } */
+.piecontacto a{
+    color: #272727;
+}
+.piecontacto p{
+    color: #272727;
+    border-right: 1px solid #272727;
+    padding-right: 1vw;
+}
