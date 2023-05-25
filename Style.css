@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
 
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
     /* home */
  
     .referencia:hover .imagen1{
         display:inline;
-        margin-left: 20vw;
         transform: scaleX(1);
     }
     .referencia:hover .imagen2{
@@ -25,21 +24,63 @@
     main .imageningreso{
         display: none;
     }
-    main .diseñador{
-        font-size: 4vw;
+    main .principalfondo .principal2 .imagencelu{
+        display: block;
+        margin-top: 5vw;
+        width: 90vw;
     }
-    main .textoingreso p{
-        font-size: 2.5vw;
-    }
-    main .seccionboton0 {
+    main .principalfondo .scroll{
         display: none;
     }
-    main .linkgit{
-      
-        margin-top: 8vw;
+    main .principalfondo{
+        height: 90vh;
     }
-    main .linkgit a{
-        font-size: 2vw;
+    main .principalfondo .principal2{
+            display: block;
+            padding: 0 5vw;
+    }
+    main .principalfondo .principal2 .redondo{
+     top: -5%;
+     left: 12vw;
+     width: 70vw;
+     height: 70vw;
+}
+    main .diseñador{
+        font-size: 2rem;
+        margin-top: 15vw;
+    }
+    main .textoingreso p{
+        font-size: 1rem;
+        line-height: 8vw;
+        margin-top: 5vw;
+    }
+    main .seccionboton0 a{
+        text-decoration: none;
+        font-size:3vw;
+        width:30vw;
+        margin-top:8vw;
+    }
+    main .seccionboton0 .boton0{
+        width: 38vw;
+        height: 6vw;
+        transform: scaleX(0.2) translateX(-60vw);
+    }
+    html body main.principal section.principalfondo div.principal2 div.textoingreso div.seccionboton0 span.material-symbols-outlined{
+        font-size: small;
+       top:40%;
+       left: 100%;
+    }
+    
+    main .seccionboton0{
+        margin-top:15vw;
+        width: 30vw;
+        height: 20vw;
+    }
+    main .linkgit{
+        display: none;
+    }
+    main .fondo2{
+        height: 25vh;
     }
     main .fondo2 p{
         font-size: 2.5vw;
@@ -63,8 +104,10 @@
     } 
     /* about me */
    header .menu a{
-        display: none;
-        
+        display: none; 
+    }
+    header .menu img{
+        margin-right: 85vw;
     }
     main .primerseccion p{
         font-size: x-small;   
@@ -137,7 +180,10 @@
     }
     body .formulario .input textarea{
         font-size:1.5vw;
-
+    }
+    body header .fa-solid{
+        display:inline;
+        
     }
 
 }
@@ -171,7 +217,9 @@ body{
 
 
 /* header */
-
+header .fa-solid{
+    display:none;
+}
 
 .menu{
     padding-left: 2vw;
@@ -238,6 +286,9 @@ body{
     padding-left: 15vw;
 
 }
+.imagencelu{
+    display: none;
+}
 .scroll{
     position: absolute;
     left: 95%;
@@ -289,7 +340,7 @@ body{
     top: 40%;
     left: 15%;
     line-height: 20px;
-    font-size: 3vw;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 5vh;
     display: inline;
@@ -357,7 +408,7 @@ body{
 
 }
 .textoingreso p{
-    font-size: small;
+    font-size:small;
     line-height: 3vw;
     color: #393939;
 
@@ -918,9 +969,10 @@ margin-top: 13vw;
 }
 .footeraboutme2 img{
  position: absolute;
- left: 85%;
+ left: 88%;
  top: 70%;
  opacity: 0.7;
+ height: 10vw;
 
 }
 
@@ -1006,7 +1058,7 @@ margin-top: 13vw;
 .formulario .seccionboton0 .material-symbols-outlined{
     position: absolute;
     left:70%;
-  top: 0%;
+    top: 0%;
  
 }
 .formulario .seccionboton0 a{
@@ -1030,6 +1082,7 @@ margin-top: 13vw;
 .piecontacto{
     height: 5vw;
     background-color:#F9F9F9;
+    padding-bottom: 2vw;
 }
 .piecontacto a{
     color: #272727;
