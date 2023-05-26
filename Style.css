@@ -1,32 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
 
+.seccionboton0:hover .boton0{
 
+    border-radius: 50px / 50px;
+    transform: translateX(0) scaleX(1) ;
+}
 @media (max-width: 768px) {
 
     /* home */
- 
-    .referencia:hover .imagen1{
-        display:inline;
-        transform: scaleX(1);
-    }
-    .referencia:hover .imagen2{
-        display:inline;
-        margin-left: 20vw;
-        transform: scaleX(1);
-    
-    }
-    .referencia:hover .imagen3{
-        display:inline;
-        margin-left: 20vw;
-        transform: scaleX(1);
-    
+
+    .seccionboton0:hover .boton0{
+
+        transform: translateX(25px) scaleX(1) ;  
     }
     main .imageningreso{
         display: none;
     }
     main .principalfondo .principal2 .imagencelu{
         display: block;
-        margin-top: 5vw;
+        margin-top: 15vw;
         width: 90vw;
     }
     main .principalfondo .scroll{
@@ -36,45 +28,47 @@
         height: 90vh;
     }
     main .principalfondo .principal2{
-            display: block;
-            padding: 0 5vw;
+        display: block;
+        padding: 0 5vw;
     }
     main .principalfondo .principal2 .redondo{
-     top: -5%;
+     top: 0%;
      left: 12vw;
-     width: 70vw;
-     height: 70vw;
-}
+     width: 80vw;
+     height: 80vw;
+    }
     main .diseñador{
         font-size: 2rem;
         margin-top: 15vw;
     }
-    main .textoingreso p{
+    html body main.principal section.principalfondo div.principal2 div.textoingreso p{
         font-size: 1rem;
         line-height: 8vw;
         margin-top: 5vw;
     }
-    main .seccionboton0 a{
+    html body main.principal section.principalfondo div.principal2 div.textoingreso div.seccionboton0 a.mitrabajo{
         text-decoration: none;
-        font-size:3vw;
-        width:30vw;
-        margin-top:8vw;
+        font-size:0.8rem;
+        width:40vw;
+        position: absolute;
+        top: 23%;
+        left: 10%;
     }
-    main .seccionboton0 .boton0{
-        width: 38vw;
-        height: 6vw;
-        transform: scaleX(0.2) translateX(-60vw);
+    html body main.principal section.principalfondo div.principal2 div.textoingreso div.seccionboton0 p.boton0{
+        width: 33vw;
+        height: 7vw;
+        left: -30%;
     }
     html body main.principal section.principalfondo div.principal2 div.textoingreso div.seccionboton0 span.material-symbols-outlined{
-        font-size: small;
-       top:40%;
-       left: 100%;
+        font-size: 1rem;
+       top:27%;
+       left: 110%;
     }
     
-    main .seccionboton0{
+    html body main.principal section.principalfondo div.principal2 div.textoingreso div.seccionboton0{
         margin-top:15vw;
         width: 30vw;
-        height: 20vw;
+        height: 20vw;  
     }
     main .linkgit{
         display: none;
@@ -83,25 +77,109 @@
         height: 25vh;
     }
     main .fondo2 p{
-        font-size: 2.5vw;
+        font-size: small;
+        top: 55%;
+        left: 10%;
     }
+
+    main .fondo2 img{
+        width: 10vw;
+        left: 44%;
+        top: 60%;
+    }
+    main .fondo2 h1{
+        top: 10%;
+        left: 10%;
+        width: 50vw;
+        line-height: 10vw;
+        
+    }
+    main .proyectos .referencia{
+        background-color:white;
+        border: none;
+        display: block;
+        height: 45vh;
+        width: 100vw;
+       
+    }
+    html body main.principal section.proyectos div.referencia p.numerogrande{
+        display: none;
+    }
+   
+    html body main.principal section.proyectos div.referencia div.seccionboton0 a{
+        text-decoration: none;
+        font-size:0.8rem;
+        width:40vw;
+        position: absolute;
+        top: -5%;
+        left: 7%;
+    }
+    html body main.principal section.proyectos div.referencia div.seccionboton0 p.boton0{
+        width: 33vw;
+        height: 7vw;
+        left: -36%;
+    }
+    html body main.principal section.proyectos div.referencia div.seccionboton0 span.material-symbols-outlined{
+        position: absolute;
+        top: 0%;
+        color: #181818;
+    }
+   
+    html body main.principal section.proyectos div.referencia div.seccionboton0{
+        left: 16%;
+        top: 65%;
+        width: 30vw ;
+        height: 20vw; 
+    }
+    main .proyectos .referencia .imagen1{
+        width: 100vw;
+        transform: scaleX(1);
+        margin-left: 0;
+        position: absolute;
+        bottom: 46%; 
+    }
+    main .proyectos .referencia h1{
+        transform: scaleX(1);
+        position: absolute;
+        bottom: 35%; 
+        left: 10%;
+        font-size: 1.5rem;
+        color: black;
+    }
+    main .proyectos .referencia .numero{
+        font-size: 0.7rem;
+        position: absolute;
+        bottom: 36%; 
+        left: 3%;
+        color: black;
+    }
+    main .proyectos .referencia:hover{
+       font-size: 0.7rem;
+       
+    }
+    main .proyectos .referencia .linea{
+     display: none;
+       
+    }
+
     footer .seccionboton0 {
         display: none;
     }
-    main .proyectos .referencia:hover .linea{
-        width: 24vw;
-        font-size: 2.5vw;
+    html body main.principal section.seccionmasproyectos img.scrolltopnegro{
+        display: none;
     }
-    main .proyectos .referencia .linea{
-        width: 20vw;
-        font-size: 2vw;
+    html body main.principal section.seccionmasproyectos{
+        padding: 5vw;
     }
-     main .proyectos .referencia .numerogrande{
-        left: 30vw;
-    } 
-    main .proyectos .referencia h1{
-        font-size: 3vw;
-    } 
+    html body footer{
+        height: 70vw;
+    }
+    html body footer div.seccionredondo{
+        width: 65vw;
+    }
+    html body footer div.seccionredondo h1{
+        font-size: 1.5rem;
+    }
     /* about me */
    header .menu a{
         display: none; 
@@ -331,8 +409,8 @@ header .fa-solid{
 }
 .fondo2 img{
     position: absolute;
-    left: 42%;
-    top: 40%;
+    left: 109%;
+    top: -25%;
     width: 3vw;
 }
 .fondo2 h1{
@@ -381,19 +459,16 @@ header .fa-solid{
 .boton0{
     position: absolute;
     z-index: -1;
+    top: -15%;
     padding:8px;
     border-radius: 100%;
     background-color: #e4e3e3;
     width: 11vw;
-    height: 1.3vw;
+    height: 2.3vw;
     transform: scaleX(.3) translateX(-15vw);
     transition: 1s;
 }
-.seccionboton0:hover .boton0{
 
-    border-radius: 50px / 50px;
-    transform: translate(0) scale(1) ;
-}
 
 .botonfooter:hover a{
     color: #363636;
@@ -618,7 +693,7 @@ header .fa-solid{
 }
 .seccionmasproyectos h1{
     line-height: 20px;
-    font-size: 3vw;
+    font-size: 2rem;
     font-weight: 600;
 }
 .seccionmasproyectos a{
@@ -707,7 +782,24 @@ footer .seccionredondo p{
     margin: 0 1vw;
     color: #FFFFFF;
 }
-
+.medioredondo{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: #dad8d8;
+    width: 50vw;
+    height: 50vw;
+    clip-path: ellipse(30vw 35vw at 0% 100%);
+}
+.medioredondo2{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: #272727;
+    width: 50vw;
+    height: 50vw;
+    clip-path: ellipse(29.9vw 34.9vw at 0% 100%);
+}
 
 @keyframes menufijo {
 
@@ -906,26 +998,40 @@ footer .seccionredondo p{
     width: 30vw;
     height: 30vw;
     border-radius:100%;
-    border: 1px solid black;
     background-color: transparent;
     position: absolute;
     z-index: 1;
     left: 35%;
     top: 13%;
+    background-image: url("img/ondulado.png");
+    background-repeat: repeat;
+    background-size: auto 2%;
 }
 .redondo2 .redondochico{
-    width: 15vw;
-    height: 15vw;
+    width: 12vw;
+    height: 12vw;
     border-radius:100%;
-    border: 1px solid black;
     background-color: #FFFFFF;
     position: absolute;
-    left: 24%;
-    top: 24%;
+    left: 30%;
+    top: 30%;
 }
+.mediocirculo{
+    position: absolute;
+    top: -12%;
+    left: 34%;
+    width: 45vw;
+    height: 45vw;
+    background-color: transparent;
+    border: 1px solid #8b8b8b;
+    border-radius: 100%;
+}
+
+  
 /* foooter aboutme */
 .footeracercade{
     display: flex;
+    overflow: hidden;
 }
 
 .footeraboutme{
@@ -1057,8 +1163,8 @@ margin-top: 13vw;
 }
 .formulario .seccionboton0 .material-symbols-outlined{
     position: absolute;
-    left:70%;
-    top: 0%;
+    left:80%;
+    top: -4%;
  
 }
 .formulario .seccionboton0 a{
@@ -1069,7 +1175,8 @@ margin-top: 13vw;
     position: absolute;
     z-index: -1;
     left: 20%;
-    bottom: -35%;
+    top: -80%;
+    /* bottom: -35%; */
     padding:8px;
     border-radius: 100%;
     background-color: #e4e3e3;
