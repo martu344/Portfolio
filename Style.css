@@ -1199,3 +1199,223 @@ margin-top: 13vw;
     border-right: 1px solid #272727;
     padding-right: 1vw;
 }
+
+/* trabajos */
+/* .headertrab .a1{
+    color: #FFFFFF;
+} */
+.headertrab .menuindividual:hover p{
+    color: #FFFFFF;
+}
+.maintrab{
+    background-color: transparent;
+}
+
+.imagenprueba{
+    width: 40vw;
+    transform: scaleX(0);
+}
+.seccionimagen1{
+    transform: scaleX(0);
+    margin-left: 100vw;
+    transition: 1s;
+   
+}
+
+.numerotrab{
+    color: #393939;
+    margin: 0 1vw;
+}
+.proyectostrab{
+    padding-top: 25vh;
+    width: 100vw;
+    height: 75vh;
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    z-index: 1;
+}
+
+
+.proyectostrab h1{
+    font-size: 2vw;
+    transition: 1s;  
+}
+
+.proyectostrab a{
+    text-decoration: none;
+    color: #393939;
+    font-size: small;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-right: 7px;
+    margin-top: 7.5px;
+}
+
+.proyectostrab .seccionboton0{
+    position: absolute;
+    left: 75%;
+    top: 0%;
+}
+.proyectostrab .seccionboton0 .boton0{
+   left: 15%;
+}
+.lineatrab{
+    text-decoration-line: line-through;
+    text-decoration-color: #FFFFFF;
+    color: black;
+    width: 5vw;
+    transform: scaleX(0) translateX(-10vw);
+    transition: 1s;
+}
+.seccionimagen1 .seccionboton0{
+    left: 65%;
+    top: 20%;
+}
+.seccionimagen1 .seccionboton0 .boton0{
+   background-color: rgb(9, 9, 9, 0.15);
+}
+.seccionimagen1 .seccionboton0 a{
+   color: #393939;
+ }
+.seccionimagen1 .seccionboton0 .material-symbols-outlined{
+    color: #393939;
+}
+/* primerreferencia */
+.referenciatrab1{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 5vw;
+    color: #393939;
+}
+.prueba1{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    opacity: 0.05;
+}
+
+.referenciatrab1:hover ~ .prueba1 {
+    background-image:url(img/imgejemplo.png)
+
+  }
+
+.referenciatrab1:hover{
+    color: white;
+    font-size: 1vw;
+}
+.referenciatrab1:hover h1{
+   transform: scale(2) translateX(2vw);
+}
+.referenciatrab1:hover .lineatrab{
+    width: 10vw;
+    transform: scaleX(1);
+}
+.referenciatrab1:hover .seccionimagen1{
+    display:inline;
+    margin-left: 30vw;
+    transform: scaleX(1) translateX(0);
+    z-index: 5;
+}
+.referenciatrab1:hover .imagenprueba{
+    display:inline;
+    transform: scaleX(1) translateX(0);
+}
+/* segundareferencia */
+.referenciatrab2{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 5vw;
+    color: #393939;
+}
+.prueba2{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+    top: 0%;
+    opacity: 0.05;
+}
+.referenciatrab2:hover ~ .prueba2 {
+    background-image:url(img/ivyre.png) ;
+  }
+  .referenciatrab2:hover{
+    color: white;
+    font-size: 1vw;
+}
+.referenciatrab2:hover h1{
+   transform: scale(2) translateX(2vw);
+}
+.referenciatrab2:hover .lineatrab{
+    width: 10vw;
+    transform: scaleX(1);
+}
+.referenciatrab2:hover .seccionimagen1{
+    display:inline;
+    margin-left: 30vw;
+    transform: scaleX(1) translateX(0);
+    z-index: 5;
+}
+.referenciatrab2:hover .imagenprueba{
+    display:inline;
+    transform: scaleX(1) translateX(0);
+}
+/* tercerareferencia */
+.referenciatrab3{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 5vw;
+    color: #393939;
+}
+.prueba3{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+    top: 0%;
+    opacity: 0.05;
+}
+.referenciatrab3:hover ~ .prueba3 {
+    background-image:url(img/martin.PNG) ;
+    /* background-size: 100%; */
+  }
+  .referenciatrab3:hover{
+    color: white;
+    font-size: 1vw;
+}
+.referenciatrab3:hover h1{
+   transform: scale(2) translateX(2vw);
+}
+.referenciatrab3:hover .lineatrab{
+    width: 10vw;
+    transform: scaleX(1);
+}
+.referenciatrab3:hover .seccionimagen1{
+    display:inline;
+    margin-left: 30vw;
+    transform: scaleX(1) translateX(0);
+}
+.referenciatrab3:hover .imagenprueba{
+    display:inline;
+    transform: scaleX(1) translateX(0);
+}
+
+.pietrab{
+    background-color: transparent;
+  height: 100vh;
+}
+.pietrab .pieB{
+   
+    z-index: 5;
+    /* bottom: -31%; */
+}
