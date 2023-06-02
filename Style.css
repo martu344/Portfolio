@@ -1637,3 +1637,15 @@ bottom: 28%;
 .pietrab .pieB{
     z-index: 5;
 }
+
+.mensajeprofe{
+    margin: 10vw 30vw;
+    width: 30vw;
+    height: 30vw;
+    text-align: center;
+    line-height: 2vw;
+}
+.mensajeprofe h1{
+    margin-bottom:2vw;
+
+}
