@@ -163,10 +163,13 @@
      display: none;
        
     }
-
-    footer .seccionboton0 {
+    html body footer div.medioredondo2{
         display: none;
     }
+    html body footer div.medioredondo{
+        display: none;
+    }
+   
     html body main.principal section.seccionmasproyectos img.scrolltopnegro{
         display: none;
     }
@@ -175,12 +178,45 @@
     }
     html body footer{
         height: 70vw;
+        align-items: start;
     }
     html body footer div.seccionredondo{
         width: 65vw;
     }
     html body footer div.seccionredondo h1{
         font-size: 1.5rem;
+        margin-top: 2vh;
+        
+    }
+    html body footer div.seccionredondo p{
+        top: 75%;
+        left: 10%;
+    }
+    html body footer div.seccionredondo div.redondorayado{
+        left: -19%;
+        top: 5%;
+        width: 20vw;
+        height: 20vw;
+    }
+    html body footer div.seccionboton0{
+        bottom: 30%;
+        width: 15vw;
+    }
+    html body footer div.seccionboton0 span.material-symbols-outlined{
+        left:100%;
+        font-size: 0.8rem;
+    }
+    html body footer div.seccionboton0 p.boton0{
+        left: -40%;
+        width: 15vw;
+        transform: scaleX(.3) translateX(0vw);
+        
+    }
+    html body footer div.seccionboton0 a{
+        font-size: 0.8rem;
+    }
+    html body footer div.pieB{
+        left: 30%;
     }
     /* about me */
    header .menu a{
@@ -190,21 +226,31 @@
         margin-right: 85vw;
     }
     main .primerseccion p{
-        font-size: x-small;   
-        line-height: normal;
+        font-size: small;   
+        line-height: 5vw;
         margin-left: 10vw;
         width: 80vw;
     }
     main .primerseccion .imagen{
         margin-bottom: 10vw;
     }
+    html body main section.primerseccion div.seccionborde img.imagen{
+        width: 50vw;
+        margin-left: 24%;
+    }
+    html body main section.primerseccion div.seccionborde div.marco{
+        width: 50vw;
+        height: 50vw;
+        left: 17%;
+        top: 15%;
+    }
     main .primerseccion h1{
         font-size: 5vw;
     }
 
     main .segundaseccion p {
-        font-size: x-small;   
-        line-height: normal;
+        font-size: small;   
+        line-height: 5vw;
         margin-left: 10vw;
         width: 80vw;
     }
@@ -217,14 +263,14 @@
         margin-left: 10vw;
     }
     main .tercerseccion p{
-        font-size: x-small;   
-        line-height: normal;
+        font-size: small;   
+        line-height: 5vw;
         margin-left: 10vw;
         width: 80vw;
     }
     main .tercerseccion li{
-        font-size: xx-small;   
-        line-height: normal;
+        font-size: small;   
+        line-height:5vw;
         margin-left: 10vw;
         width: 80vw;
     }
@@ -233,39 +279,89 @@
     }
     main .cuartaseccion h1{
         font-size: 5vw;
+        top: 30%;
     }
     main .cuartaseccion p{
         font-size: xx-small;
         margin-top: 10vw;
     }
-    body .piedeaboutme{
-        height: 50vw;
+    html body footer.footeracercade section.footeraboutme div.seccionredondo h1{
+        top: 10%;
+        width: 50vw;
+        font-size: 1.3rem;
     }
-    footer .pie h1{
-        font-size: 5vw;
+    html body footer.footeracercade section.footeraboutme div.seccionredondo p{
+        top:70%;
+        left: 20%;
+        width: 60vw;
     }
-    footer .pie p{
-        font-size: xx-small;
+    html body footer.footeracercade section.footeraboutme2 img{
+        height: 20vw;
+        left: 80%;
     }
-    footer .pie .seccionboton0{
+    html body footer.footeracercade section.footeraboutme2 div.linkgit{
+        display: none;
+    }
+    html body footer.footeracercade section.footeraboutme2 div.mediocirculo{
         display: none;
     }
 
     /* contacto */
-    body .formulario p{
-        font-size:1.5vw;
+    html body main.formulario {
+        display: block;
+        margin-top: 10vh;
+        margin-left: 10vw;
     }
-    body .formulario .input input{
-        font-size:1.5vw;
+    html body main.formulario div{
+        width: 80%;
     }
-    body .formulario .input textarea{
-        font-size:1.5vw;
+    html body main.formulario div p{
+        font-size:small;
+    line-height: 3vh;
+    margin-top: 5vh;
+
     }
-    body header .fa-solid{
-        display:inline;
+    html body main.formulario div .input input{
+        font-size:0.8rem;
+        width: 70vw;
+        margin-top:3vh;
+    }
+    html body main.formulario div .input{
+        width: 70vw;
         
     }
-
+    html body main.formulario div textarea{
+        font-size:0.8rem;
+        margin-top: 3vh;
+        height: 15vh;
+        width: 70vw;
+    }
+    html body main.formulario div form.input div p{
+        top: 58%;
+        left: 106%;
+    }
+   
+    html body main.formulario div h1{
+        font-size: 1.5rem;
+    }
+    html body main.formulario img.imgcontact{
+        display: none;
+    }
+   
+    html body footer.piecontacto div.pieB{
+        left: 28%;
+        bottom: 30%;
+    }
+    html body main.formulario div div.seccionboton0 p.boton0{
+        left:5%;
+        width: 20vw;
+        height: 2vh;
+    }
+    html body main.formulario div div.seccionboton0{
+        margin-top: 10vh;
+        width: 30vw;
+        height: 60px;
+    }
 }
 
 
@@ -277,7 +373,6 @@
 body{
     background-color: #F9F9F9;
     font-family: 'Roboto', sans-serif;
-    /* overflow-x: hidden; */
     width: 100vw;
 }
 /* personalizacion de barra para firefox */
@@ -288,8 +383,7 @@ body{
 .proyectos {
     scrollbar-width: none;
   }
-  html{
-    /* -ms-overflow-style: none; */
+html{
     scrollbar-color: #e4e3e3 #FFFFFF;
     scrollbar-width: thin;
     width: 100vw;
@@ -529,7 +623,7 @@ header .fa-solid{
     width: 100vw;
     height: 50vh;
     animation-name: partearriba;
-    animation-delay: 7.5s;
+    animation-delay: 6.5s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 
@@ -539,7 +633,7 @@ header .fa-solid{
     width: 100vw;
     height: 50vh;
     animation-name: parteabajo;
-    animation-delay: 7.5s;
+    animation-delay: 6.5s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
@@ -553,16 +647,16 @@ header .fa-solid{
     opacity: 0.2;
     border-top: 4px solid #F9F9F9;
     animation-duration: 2s;
-    animation-name:linea1;
-    animation-delay: 4.2s;
+    animation-name:linea1 ;
+    animation-delay: 4.8s;
     animation-fill-mode: forwards;
 }
  .linea2{
     margin:0 45vw;
     border-top: 4px solid #F9F9F9;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name:linea2;
-    animation-delay: 1.3s;
+    animation-delay: 0.8s;
     animation-fill-mode: forwards;
     opacity:0;
     color: #393939;
@@ -574,18 +668,8 @@ header .fa-solid{
     transform: scaleX(0);
     margin-left: 100vw;
     transition: 1s;
-}
-.imagen2{
-    width: 40vw;
-    transform: scaleX(0);
-    margin-left: 100vw;
-    transition: 1s;
-}
-.imagen3{
-    width: 40vw;
-    transform: scaleX(0);
-    margin-left: 100vw;
-    transition: 1s;
+    position: absolute;
+    z-index: 2;
 }
 
 .numero{
@@ -633,11 +717,23 @@ header .fa-solid{
     position: absolute;
     left: 75%;
     top: 0%;
+    z-index: 5;
 }
 .referencia .seccionboton0 .boton0{
    left: 15%;
 }
-
+.recuadro{
+    width: 40vw;
+    height: 20vw;
+    background-color: #d3e3fa;
+    position: absolute;
+    left: 55%;
+    top:20% ;
+    margin-left: 25vw;
+    z-index: 2;
+    transform: scaleX(0);
+    transition: 1s;
+}
 
 .referencia:hover{
     background-color: #FFFFFF;
@@ -650,19 +746,12 @@ header .fa-solid{
 .referencia:hover .imagen1{
     display:inline;
     margin-left: 30vw;
-    transform: scaleX(1);
+    transform: scaleX(1) translateX(75%) skewY(-3deg);
+    transform-origin: top left;
 }
-.referencia:hover .imagen2{
-    display:inline;
-    margin-left: 30vw;
+.referencia:hover .recuadro{
     transform: scaleX(1);
-
-}
-.referencia:hover .imagen3{
-    display:inline;
-    margin-left: 30vw;
-    transform: scaleX(1);
-
+    margin-left: 0;
 }
 .referencia:hover .numerogrande{
     transform: scale(1);
@@ -803,6 +892,7 @@ footer .seccionredondo p{
     clip-path: ellipse(29.9vw 34.9vw at 0% 100%);
 }
 
+/* animaciones para menu, presentacion */
 @keyframes menufijo {
 
     100%{
@@ -848,10 +938,13 @@ footer .seccionredondo p{
     0%{
 
     }
-    100%{
+    80%{
         opacity: 1;
         margin: 0;
         width: 100vw;
+    }
+    100%{
+        opacity: 0;
     }
 }
 @keyframes linea2 {
@@ -859,11 +952,16 @@ footer .seccionredondo p{
         margin-right: 100%;
     }
 
-    100%{
+    99%{
 
-       opacity: 0.5;
-    }
+        opacity: 0.5;
+     }
+     100%{
+        display: none;
+     }
+
 }
+
 @keyframes nombre {
     0%{
         transform:scale(1.8);
@@ -888,6 +986,18 @@ footer .seccionredondo p{
 .imagen{
     width: 20vw;
     margin-left: 15vw;
+}
+.marco{
+    width:20vw;
+    height: 20vw;
+    position: absolute;
+    z-index: -1;
+    background-image: repeating-linear-gradient( -45deg, #F9F9F9 4px, #272727 5px, #F9F9F9 0px,#F9F9F9 20px );
+    left: 9%;
+    top: 37%;
+}
+.seccionborde{
+    position: relative;
 }
 .primerseccion p{
     margin-left: 50vw;
@@ -1160,7 +1270,7 @@ margin-top: 13vw;
     position: relative;
     z-index: 1;
     height: 3vw;
-    width: 9.5vw;
+    width: 8vw;
     left: 60%;
     margin-top: 2vw;
 }
@@ -1177,15 +1287,13 @@ margin-top: 13vw;
 .formulario .boton0{
     position: absolute;
     z-index: -1;
-    left: 20%;
     top: -80%;
-    /* bottom: -35%; */
     padding:8px;
     border-radius: 100%;
     background-color: #e4e3e3;
-    width: 8vw;
+    width: 7vw;
     height: 1.3vw;
-    transform: scaleX(.3) translateX(-15vw);
+    transform: scaleX(.3) translateX(-5vw);
     transition: 1s;
 }
 
@@ -1204,14 +1312,12 @@ margin-top: 13vw;
 }
 
 /* trabajos */
-/* .headertrab .a1{
-    color: #FFFFFF;
-} */
 .headertrab .menuindividual:hover p{
     color: #FFFFFF;
 }
 .maintrab{
     background-color: transparent;
+    height: 90vh;
 }
 
 .imagenprueba{
@@ -1232,7 +1338,7 @@ margin-top: 13vw;
 .proyectostrab{
     padding-top: 25vh;
     width: 100vw;
-    height: 75vh;
+    height: 100vh;
     background-color: rgb(7, 7, 7);
     position: absolute;
     z-index: 1;
@@ -1283,6 +1389,9 @@ margin-top: 13vw;
 .seccionimagen1 .seccionboton0 .material-symbols-outlined{
     color: #393939;
 }
+.maintrab .recuadro{
+z-index: -2; 
+}
 /* primerreferencia */
 .referenciatrab1{
     position: relative;
@@ -1295,7 +1404,7 @@ margin-top: 13vw;
 }
 .prueba1{
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     position: absolute;
     z-index: -1;
     top: 0%;
@@ -1306,7 +1415,10 @@ margin-top: 13vw;
     background-image:url(img/imgejemplo.png)
 
   }
-
+  .referenciatrab1:hover .recuadro{
+    transform: scaleX(1);
+    left: -70%;
+}
 .referenciatrab1:hover{
     color: white;
     font-size: 1vw;
@@ -1327,6 +1439,14 @@ margin-top: 13vw;
 .referenciatrab1:hover .imagenprueba{
     display:inline;
     transform: scaleX(1) translateX(0);
+}
+.referenciatrab1:hover ~ .barra .num1{
+    transform: scale(2.5);
+    display: block;
+}
+.referenciatrab1:hover ~ .barra .num0{
+    transform: scale(0);
+    display: none;
 }
 /* segundareferencia */
 .referenciatrab2{
@@ -1349,6 +1469,10 @@ margin-top: 13vw;
 .referenciatrab2:hover ~ .prueba2 {
     background-image:url(img/ivyre.png) ;
   }
+.referenciatrab2:hover .recuadro{
+    transform: scaleX(1);
+    left: -70%;
+}
   .referenciatrab2:hover{
     color: white;
     font-size: 1vw;
@@ -1370,6 +1494,14 @@ margin-top: 13vw;
     display:inline;
     transform: scaleX(1) translateX(0);
 }
+.referenciatrab2:hover ~ .barra .num2{
+    transform: scale(2.5);
+    display: block;
+}
+.referenciatrab2:hover ~ .barra .num0{
+    transform: scale(0);
+    display: none;
+}
 /* tercerareferencia */
 .referenciatrab3{
     position: relative;
@@ -1389,9 +1521,12 @@ margin-top: 13vw;
     opacity: 0.05;
 }
 .referenciatrab3:hover ~ .prueba3 {
-    background-image:url(img/martin.PNG) ;
-    /* background-size: 100%; */
+    background-image:url(img/home.png) ;
   }
+.referenciatrab3:hover .recuadro{
+    transform: scaleX(1);
+    left: -70%;
+}
   .referenciatrab3:hover{
     color: white;
     font-size: 1vw;
@@ -1413,12 +1548,92 @@ margin-top: 13vw;
     transform: scaleX(1) translateX(0);
 }
 
+.referenciatrab3:hover ~ .barra .num3{
+    transform: scale(2.5);
+    display: block;
+}
+.referenciatrab3:hover ~ .barra .num0{
+    transform: scale(0);
+    display: none;
+}
+.barra{
+    display: flex;
+    color: white;
+    margin-left: 50vw;
+    font-size:2rem ;
+    margin-top: 25vh;
+    position: relative;
+    width: 650px;
+    height: 100px;
+}
+.num0{
+    margin-right: 25px;
+    text-align: right;
+}
+.num1{
+    margin-right: 25px;
+    display: none;
+   
+}
+.num2{
+    margin-right: 25px;
+    display: none;
+}
+.num3{
+    margin-right: 25px;
+    display: none;
+}
+.botonera{
+   position: absolute;
+   top: -47%;
+    left: 75%;
+}
+.botoncito{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #FFFFFF;
+    position: relative;
+}
+.botoncito1{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #FFFFFF;
+    position: relative;
+}
+.botoncito img{
+    position: absolute;
+    right: 17%;
+bottom: 28%;
+  }
+  .botoncito1 img{
+    position: absolute;
+    right: 22%;
+    bottom: 15%;
+  }
+
+
+.lineaentrebotones{
+    margin:15px 25px;
+    height: 20px;
+    border-left: 1px solid #FFFFFF;
+}
+
+.barram{
+    margin-top: 15px;
+    margin-left: 10px;;
+    background-color: rgb(7, 7, 7);
+    height: 5px;
+}
+.barram::-moz-progress-bar {
+    background-color: #FFFFFF;
+  }
+
 .pietrab{
     background-color: transparent;
-  height: 100vh;
+  height: 28vh;
 }
 .pietrab .pieB{
-   
     z-index: 5;
-    /* bottom: -31%; */
 }
