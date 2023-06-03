@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
 
+
+
+/*profe este hover lo puse arriba porque al hacer el responsive y cambiar el "transform"
+al quedar el @media arriba del original no me hacia los cambios, buscando encontre que tienen un orden 
+de prioridad y al dejar el @media debajo del hover que quiero cambiar me funciono,
+solo me paso con :hover{transform}*/
+
 .seccionboton0:hover .boton0{
 
     border-radius: 50px / 50px;
     transform: translateX(0) scaleX(1) ;
 }
+
 @media (max-width: 768px) {
 
     /* home */
@@ -371,6 +379,7 @@
     padding:0;
 }
 body{
+   
     background-color: #F9F9F9;
     font-family: 'Roboto', sans-serif;
     width: 100vw;
@@ -389,6 +398,14 @@ html{
     width: 100vw;
   }
 
+ .index{
+    overflow-y: hidden;
+    animation-name: scrollear;
+    animation-delay: 9s;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+ }
+
 
 /* header */
 header .fa-solid{
@@ -399,6 +416,17 @@ header .fa-solid{
     padding-left: 2vw;
     padding-top: 2vw;
     padding-bottom: 1vw;
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: +20;
+
+}
+.menuindex{
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
     animation-name: menufijo;
     animation-fill-mode: forwards;
     animation-delay: 9s;
@@ -406,6 +434,11 @@ header .fa-solid{
     width: 100vw;
 }
 .menu img{
+    width: 5vw;
+    height: 5vw;
+    margin-right: 60vw;
+}
+.menuindex img{
     width: 5vw;
     height: 5vw;
     margin-right: 60vw;
@@ -549,18 +582,18 @@ header .fa-solid{
     display: flex;
     justify-content: center;
     height: 3vw;
-    width: 13vw;
+    width: 170px;
     margin-top: 8vw;
 }
 .boton0{
     position: absolute;
     z-index: -1;
-    top: -15%;
+    top: -20%;
     padding:8px;
     border-radius: 100%;
     background-color: #e4e3e3;
-    width: 11vw;
-    height: 2.3vw;
+    width: 160px;
+    height: 40px;
     transform: scaleX(.3) translateX(-15vw);
     transition: 1s;
 }
@@ -830,8 +863,10 @@ footer{
 
 footer .seccionboton0 .boton0{
     background-color: #363636;
-    left: 22%;
-    width: 8vw;
+    width: 100px;
+    height: 30px;
+    transform: scaleX(.3) translateX(-6vw);
+    top: -6%;
 }
 footer .seccionboton0 .material-symbols-outlined{
    top: 15%;
@@ -893,6 +928,10 @@ footer .seccionredondo p{
 }
 
 /* animaciones para menu, presentacion */
+@keyframes scrollear {
+    100%{overflow-y: auto;}
+    
+}
 @keyframes menufijo {
 
     100%{
@@ -984,17 +1023,17 @@ footer .seccionredondo p{
     font-weight: 600;
 }
 .imagen{
-    width: 20vw;
-    margin-left: 15vw;
+    width: 25vw;
+    margin-left: 13vw;
 }
 .marco{
-    width:20vw;
-    height: 20vw;
+    width:25vw;
+    height: 25vw;
     position: absolute;
     z-index: -1;
     background-image: repeating-linear-gradient( -45deg, #F9F9F9 4px, #272727 5px, #F9F9F9 0px,#F9F9F9 20px );
     left: 9%;
-    top: 37%;
+    top: 25%;
 }
 .seccionborde{
     position: relative;
@@ -1269,31 +1308,30 @@ margin-top: 13vw;
 .formulario .seccionboton0{
     position: relative;
     z-index: 1;
-    height: 3vw;
-    width: 8vw;
+    width: 100px;
+    height: 30px;
     left: 60%;
-    margin-top: 2vw;
+    margin-top: 30px;
 }
 .formulario .seccionboton0 .material-symbols-outlined{
     position: absolute;
     left:80%;
-    top: -4%;
+    top: 25%;
  
 }
 .formulario .seccionboton0 a{
-    position: absolute;
-    z-index: 1;
+    padding-top: 10px;
 }
 .formulario .boton0{
-    position: absolute;
-    z-index: -1;
-    top: -80%;
+    margin-top: 35px;
+    left: 4%;
+    top: -136%;
     padding:8px;
     border-radius: 100%;
     background-color: #e4e3e3;
-    width: 7vw;
-    height: 1.3vw;
-    transform: scaleX(.3) translateX(-5vw);
+    width: 100px;
+    height: 30px;
+    transform: scaleX(.3) translateX(-6vw);
     transition: 1s;
 }
 
