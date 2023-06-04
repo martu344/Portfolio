@@ -13,10 +13,18 @@ solo me paso con :hover{transform}*/
     transform: translateX(0) scaleX(1) ;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 
     /* home */
-
+    html body header nav a{
+        display: none; 
+    }
+    html body header nav i.fa-solid.fa-bars{
+        display: block;
+        position: absolute;
+        right: 8%;
+    }
+ 
     .seccionboton0:hover .boton0{
 
         transform: translateX(25px) scaleX(1) ;  
@@ -213,23 +221,24 @@ solo me paso con :hover{transform}*/
     html body footer div.seccionboton0 span.material-symbols-outlined{
         left:100%;
         font-size: 0.8rem;
+        margin-top: 8px;
     }
     html body footer div.seccionboton0 p.boton0{
+        
         left: -40%;
         width: 15vw;
+        height: 5vw;
         transform: scaleX(.3) translateX(0vw);
         
     }
     html body footer div.seccionboton0 a{
         font-size: 0.8rem;
+        margin-top: 8px;
     }
     html body footer div.pieB{
         left: 30%;
     }
     /* about me */
-   header .menu a{
-        display: none; 
-    }
     header .menu img{
         margin-right: 85vw;
     }
@@ -301,7 +310,7 @@ solo me paso con :hover{transform}*/
     html body footer.footeracercade section.footeraboutme div.seccionredondo p{
         top:70%;
         left: 20%;
-        width: 60vw;
+        width: 80vw;
     }
     html body footer.footeracercade section.footeraboutme2 img{
         height: 20vw;
@@ -364,9 +373,10 @@ solo me paso con :hover{transform}*/
         left:5%;
         width: 20vw;
         height: 2vh;
+        top: -50%;
     }
     html body main.formulario div div.seccionboton0{
-        margin-top: 10vh;
+        margin-top: 10px;
         width: 30vw;
         height: 60px;
     }
