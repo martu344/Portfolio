@@ -8,4 +8,4 @@ proyectos de una forma presentable y organizada como lo es un portafolio.
 En el mismo hay muchas tecnicas y formas avanzadas de usar el CSS y la estructura de HTML, el cual demuestra las habilidades adquiridas en la Diplomatura.
 </p>
 
-<a href="https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design" traget= "blank"> <strong> Diseño del portafolio original </strong> </a>
+<a href="https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design" target= "blank"> <strong> Diseño del portafolio original </strong> </a>
