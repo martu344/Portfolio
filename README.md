@@ -9,4 +9,4 @@ En el mismo hay muchas tecnicas y formas avanzadas de usar el CSS y la estructur
 </p>
 
 <a> <p> Deploy del diseño:  </p>https://martu344.github.io/Portfolio/</a>  
-<a href="https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design" target="_blank"> <strong> Diseño del portafolio original </strong> </a>
+<a <p> Diseño de Behance:  </p> href="https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design" target="_blank"> </a>
